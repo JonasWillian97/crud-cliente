@@ -1,11 +1,12 @@
 <div class="card">
     <img src="../../../assets/images/user.png" alt="cliente"/>
-    <form>
-        <input type="text" placeholder="Digite seu nome..." class="form-control" />
-        <input type="number" placeholder="Digite sua idade..." class="form-control" />
-        <input type="text" placeholder="Digite sua cidade..." class="form-control" />
+    <form [formGroup]="form">
+        <input type="text" placeholder="Digite seu nome..." class="form-control" formControlName="name" />
+        <input type="number" placeholder="Digite sua idade..." class="form-control"  formControlName="age" />
+        <input type="text" placeholder="Digite sua cidade..." class="form-control"   formControlName="city" />
 
-        <button class="btn  btn-primary">Cadastrar</button>
+        <button class="btn  btn-primary" (click)="register()"  >Cadastrar</button>
         <button class="btn  btn-warning" routerLink="/clientes">Cancelar</button>
     </form>
 </div>
+
