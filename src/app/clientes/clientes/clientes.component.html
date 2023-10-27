@@ -12,12 +12,12 @@
                 <th>Opções</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+        <tbody *ngFor="let cliente of clientes">
+            <tr >
+                <td>{{cliente.id}}</td>
+                <td>{{cliente.name | titlecase}}</td>
+                <td>{{cliente.age}}</td>
+                <td>{{cliente.city | titlecase}}</td>
                 <td>
                     <button routerLink="atualizar">
                         <img src="../../../assets/images/edit.png" alt="editar" />

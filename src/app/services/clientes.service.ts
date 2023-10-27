@@ -14,7 +14,7 @@ export class ClientesService {
 
    }
 
-   getAll(cliente: Cliente):Observable<Cliente[]>{
+   getAll():Observable<Cliente[]>{
     return this.http.get<Cliente[]>(this.url);
    }
 }
