@@ -1,0 +1,27 @@
+$backgroundColor: blue;
+$color: #fff;
+$font: 18px;
+
+nav{
+    background-color: $backgroundColor;
+    height: 70px;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+a{
+    color: $color;
+    font-size: $font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
