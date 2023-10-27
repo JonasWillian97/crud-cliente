@@ -1,0 +1,10 @@
+{
+  "clientes": [
+      {
+          "id": 1, "name": "paulo ricardo", "age": 36, "city": "narandiba"
+      },
+      {
+          "id": 2, "name": "roseneide gonçalves", "age": 53, "city": "narandiba"            
+      }
+  ]
+}
