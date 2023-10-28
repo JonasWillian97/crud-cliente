@@ -18,7 +18,15 @@ export class ClientesService {
     return this.http.get<Cliente[]>(this.url);
    }
 
+   getById(id: number):Observable <Cliente> {
+    return this.http.get<Cliente>(`${this.url}/${id}`);
+   }
+
    register(cliente: Cliente):Observable<Cliente>{
     return this.http.post<Cliente>(`${this.url}`, cliente);
+   }
+
+   update(cliente: Cliente):Observable <Cliente> {
+    return this.http.put<Cliente>(`${this.url}/${cliente.id}`, cliente)
    }
 }

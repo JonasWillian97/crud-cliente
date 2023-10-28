@@ -7,7 +7,7 @@ import { AtualizarClientesComponent } from './atualizar-clientes/atualizar-clien
 const routes: Routes = [
   {path:"", component: ClientesComponent},
   {path:"cadastrar", component: CadastrarClientesComponent},
-  {path:"atualizar", component: AtualizarClientesComponent}
+  {path:"atualizar/:id", component: AtualizarClientesComponent}
 ];
 
 @NgModule({
