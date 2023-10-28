@@ -1,11 +1,11 @@
 <div class="card">
     <img src="../../../assets/images/user.png" alt="cliente"/>
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <input type="text" placeholder="Digite seu nome..." class="form-control" />
         <input type="number" placeholder="Digite sua idade..." class="form-control" />
         <input type="text" placeholder="Digite sua cidade..." class="form-control" />
 
-        <button class="btn  btn-success" (click)="updateClient()">Atualizar</button>
+        <button class="btn  btn-success" (click)="onSubmit()">Atualizar</button>
         <button class="btn  btn-warning" routerLink="/clientes">Cancelar</button>
     </form>
 </div>

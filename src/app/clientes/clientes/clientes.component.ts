@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cliente } from 'src/app/model/Cliente';
 import { ClientesService } from 'src/app/services/clientes.service';
 
@@ -11,7 +12,8 @@ export class ClientesComponent {
 
   clientes: Cliente[] = [];
 
-  constructor(private clientesService: ClientesService){
+  constructor(private clientesService: ClientesService,
+    private router: Router){
 
   }
 
@@ -21,6 +23,10 @@ export class ClientesComponent {
 
   getAll(){
     this.clientesService.getAll().subscribe(retorno => this.clientes = retorno);
+  }
+
+  delete(cliente: Cliente){
+    return this.clientesService.delte(cliente.id).subscribe(retorno => retorno);
   }
 
 
