@@ -1,0 +1,26 @@
+$background: blue;
+$heigt: 80px;
+$font: 18px;
+$bottom: 0px;
+$position: fixed;
+
+
+footer{
+    background-color: $background;
+    bottom: $bottom;
+    position: $position;
+    height: $heigt;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer > span {
+    color: #fff;
+}
